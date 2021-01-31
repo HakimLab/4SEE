@@ -30,7 +30,7 @@ WIND<- N/2 # Half of the size of the window (N) used for the analysis.
 data_full<-read.delim("RE_sites_genome_N_windows_with_RE", header=FALSE) #RE windows with the number of total RE per window.
 
 ## Calcualte per sample
-data_bait<- read.delim("RE_sites_genome_N_windows_with_Sample_RE", header=FALSE) #RE windows with the number of valid RE from the sample per window.
+data_bait<-read.delim("RE_sites_genome_N_windows_with_Sample_RE", header=FALSE) #RE windows with the number of valid RE from the sample per window.
 
 #Calcualte p-values
 pValues<-pValCal(data_bait,data_full)
